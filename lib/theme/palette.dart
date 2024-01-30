@@ -11,6 +11,8 @@ class Palette {
   static const greenColor = Color(0xFFE9F3EC); // secondary color
   static const blueColor = Color(0xFF2071EE); // secondary color
   static const pinkColor = Color(0xFFF92270); // secondary color
+  static const lightRedColor = Color(0xFFFFE1E1); // secondary color
+  static const redColor = Color(0xFFFF6767); // secondary color
   static const yellowColor = Color(0xFFF0B90B); // secondary color
 
   static const greenLightColor = Color(0xFF58BB47); // secondary color
@@ -20,7 +22,6 @@ class Palette {
 
   static const drawerColor = Color.fromRGBO(18, 18, 18, 1);
   static const whiteColor = Colors.white;
-  static var redColor = Colors.red.shade500;
 
 
   // Themes
@@ -38,10 +39,12 @@ class Palette {
     ),
     primaryColor: redColor,
     canvasColor: Colors.white,
-    backgroundColor: drawerColor, // will be used as alternative background color
+    backgroundColor: drawerColor, //
+// will be used as alternative background color
   );
 
   static var lightModeAppTheme = ThemeData.light().copyWith(
+    useMaterial3: true,
     scaffoldBackgroundColor: whiteColor,
     cardColor: greyColor,
     appBarTheme: const AppBarTheme(
@@ -56,5 +59,7 @@ class Palette {
     ),
     primaryColor: redColor,
     backgroundColor: whiteColor,
+    canvasColor: Colors.white,
+
   );
 }

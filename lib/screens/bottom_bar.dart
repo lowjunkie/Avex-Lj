@@ -1,4 +1,5 @@
 import 'package:design_one/screens/dashboard_screen.dart';
+import 'package:design_one/screens/settings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -20,7 +21,7 @@ class _BottomBarState extends State<BottomBar> {
     const DashboardScreen(),
     const Text("two"),
     const Text("Ticket"),
-    const Text("Profile")
+    const SettingsScreen()
   ];
 
   void _onItemTapped(int index) {
@@ -393,6 +394,7 @@ class _BottomBarState extends State<BottomBar> {
         padding: const EdgeInsets.symmetric(horizontal: 10),
         height: 60,
         color: Colors.white,
+        surfaceTintColor: Colors.white,
         shape: const CircularNotchedRectangle(),
         notchMargin: 5,
         child: Row(
