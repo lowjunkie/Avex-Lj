@@ -1,3 +1,4 @@
+import 'package:design_one/screens/rate_us_screen.dart';
 import 'package:design_one/theme/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -12,7 +13,7 @@ class SettingsScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           scrolledUnderElevation: 0,
-          title: Text("Settings", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Colors.black),),
+          title: const Text("Settings", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Colors.black),),
           centerTitle: true,
           actions: [
             Padding(
@@ -34,7 +35,7 @@ class SettingsScreen extends StatelessWidget {
                     Text("General", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Palette.greyColor),)
                   ],
                 ),
-                Divider(height: 28,color: Palette.dividerColor, thickness: 2,),
+                const Divider(height: 28,color: Palette.dividerColor, thickness: 2,),
 
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
@@ -190,7 +191,7 @@ class SettingsScreen extends StatelessWidget {
                     Text("Recovery", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Palette.greyColor),)
                   ],
                 ),
-                Divider(height: 28,color: Palette.dividerColor, thickness: 2,),
+                const Divider(height: 28,color: Palette.dividerColor, thickness: 2,),
 
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
@@ -274,7 +275,7 @@ class SettingsScreen extends StatelessWidget {
                     Text("Support", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Palette.greyColor),)
                   ],
                 ),
-                Divider(height: 28,color: Palette.dividerColor, thickness: 2,),
+                const Divider(height: 28,color: Palette.dividerColor, thickness: 2,),
 
 
                 Padding(
@@ -313,40 +314,48 @@ class SettingsScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8.0),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        minRadius: 24,
-                        backgroundColor: Palette.yellowColor,
-                        child: Icon(PhosphorIcons.shootingStar(),
-                          color: Colors.white,),
-                      ),
-                      const Gap(10),
-                      const Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Rate Us",
-                            style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.black),
-                          ),
-                          Gap(4),
-                          Text(
-                            "Share us what you feel",
-                            style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                                color: Palette.greyColor),
-                          ),
-                        ],
-                      ),
-                      Expanded(child: Container()),
-                      Icon(PhosphorIcons.caretRight(), color: Colors.black,)
-                    ],
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const RateUsScreen()),
+                    );
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          minRadius: 24,
+                          backgroundColor: Palette.yellowColor,
+                          child: Icon(PhosphorIcons.shootingStar(),
+                            color: Colors.white,),
+                        ),
+                        const Gap(10),
+                        const Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Rate Us",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black),
+                            ),
+                            Gap(4),
+                            Text(
+                              "Share us what you feel",
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                  color: Palette.greyColor),
+                            ),
+                          ],
+                        ),
+                        Expanded(child: Container()),
+                        Icon(PhosphorIcons.caretRight(), color: Colors.black,)
+                      ],
+                    ),
                   ),
                 ),
 
@@ -359,7 +368,7 @@ class SettingsScreen extends StatelessWidget {
                     Text("Socials", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Palette.greyColor),)
                   ],
                 ),
-                Divider(height: 28,color: Palette.dividerColor, thickness: 2,),
+                const Divider(height: 28,color: Palette.dividerColor, thickness: 2,),
 
                 const Gap(24),
 
