@@ -69,6 +69,13 @@ flutter:
   assets:
      - assets/images/aj_avatar.png
      - assets/images/eth.png
+     - assets/images/o_sprinkles.png
+     - assets/images/x_sprinkles.png
+     - assets/images/stripe_doodle_left.png
+     - assets/images/stripe_doodle_right.png
+
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

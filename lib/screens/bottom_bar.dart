@@ -1,5 +1,6 @@
 import 'package:design_one/screens/dashboard_screen.dart';
 import 'package:design_one/screens/settings_screen.dart';
+import 'package:design_one/screens/wallet_bg_edit.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -20,7 +21,7 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _widgetOptions = <Widget>[
     const DashboardScreen(),
     const Text("two"),
-    const Text("Ticket"),
+    const WalletBgEditScreen(),
     const SettingsScreen()
   ];
 
