@@ -5,26 +5,45 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../theme/palette.dart';
 
 class Wallet extends StatelessWidget {
-  const Wallet({super.key});
+  final currentColor;
+
+   const Wallet({super.key, this.currentColor});
+
+
+   static List<Color> colors = [
+    Palette.blueColor,
+    Palette.greenDarkColor,
+    Palette.yellowColor,
+    Palette.redColor,
+    Palette.purpleColor,
+    Palette.pinkColor,
+    Palette.greyDarkColor
+  ];
+
+
+
+
 
   @override
   Widget build(BuildContext context) {
-    return           Stack(
+
+    return Stack(
       children: [
         SizedBox(
           width: double.infinity,
           height: 210,
-          child: Container(
+          child: AnimatedContainer(
+            duration: Duration(milliseconds: 300),
             padding:
             const EdgeInsets.only(right: 20, top: 16, bottom: 16),
             decoration: BoxDecoration(
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(28),
-                gradient: const LinearGradient(
+                gradient:  LinearGradient(
                   begin: Alignment.bottomLeft,
                   end: Alignment.topRight,
                   colors: [
-                    Color(0xFF2071EE),
+                    colors[currentColor],
                     Color(0xFF0051CF),
                   ],
                 ),
