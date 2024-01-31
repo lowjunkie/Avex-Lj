@@ -126,10 +126,10 @@ class _WalletBgEditScreenState extends State<WalletBgEditScreen> {
                       onTapDown: (details){
                         setState(() {
                           if(0 <= currentColor){
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 18;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 16.5  + ((0 - currentColor).abs() * 1.5);
 
                           }else{
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 24;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 30 + ((0 - currentColor).abs() * 1.5);
 
                           }
                         });
@@ -149,10 +149,10 @@ class _WalletBgEditScreenState extends State<WalletBgEditScreen> {
                       onTapDown: (details){
                         setState(() {
                           if(1 <= currentColor){
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 18;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 16.5 + ((1 - currentColor).abs() * 1.5);
 
                           }else{
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 24;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 30 + ((1 - currentColor).abs() * 1.5);
 
                           }
                         });
@@ -173,10 +173,10 @@ class _WalletBgEditScreenState extends State<WalletBgEditScreen> {
                         print(details.localPosition.dx);
                         setState(() {
                           if(2 <= currentColor){
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 18;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 16.5  + ((2 - currentColor).abs() * 1.5);
 
                           }else{
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 24;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 30 + ((2 - currentColor).abs() * 1.5);
 
                           }
                         });
@@ -197,10 +197,10 @@ class _WalletBgEditScreenState extends State<WalletBgEditScreen> {
                         print(details.localPosition.dx);
                         setState(() {
                           if(3 <= currentColor){
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 18;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 16.5 + ((3 - currentColor).abs() * 1.5);
 
                           }else{
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 24;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 30 + ((3 - currentColor).abs() * 1.5);
 
                           }
                         });
@@ -220,10 +220,10 @@ class _WalletBgEditScreenState extends State<WalletBgEditScreen> {
                       onTapDown: (details){
                         setState(() {
                           if(4 <= currentColor){
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 18;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 16.5 + ((4 - currentColor).abs() * 1.5);
 
                           }else{
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 24;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 30 + ((4 - currentColor).abs() * 1.5);
 
                           }
                         });
@@ -243,10 +243,10 @@ class _WalletBgEditScreenState extends State<WalletBgEditScreen> {
                       onTapDown: (details){
                         setState(() {
                           if(5 <= currentColor){
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 18;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 16.5 + ((5 - currentColor).abs() * 1.5);
 
                           }else{
-                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 24;
+                            currentPosition = (details.globalPosition.dx - details.localPosition.dx) - 30 + ((5 - currentColor).abs() * 1.5);
 
                           }
                         });

@@ -14,8 +14,8 @@ class ColorElement extends StatelessWidget {
     return AnimatedSize(
       duration: Duration(milliseconds: 200),
       child: SizedBox(
-        width: i == currentColor ? 26: 20,
-        height: i == currentColor ? 26 : 20,
+        width: i == currentColor ? 26: (20 - ((i-currentColor).abs() * 1.5)).toDouble(),
+        height: i == currentColor ? 26 : (20 - ((i-currentColor).abs() * 1.5)).toDouble(),
         child: Container(
           decoration: BoxDecoration(
               color: color,
